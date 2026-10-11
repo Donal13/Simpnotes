@@ -1,0 +1,4 @@
+# Keep each Gradle wrapper script runnable on its own platform, whatever the checkout settings.
+gradlew text eol=lf
+*.bat text eol=crlf
+*.jar binary

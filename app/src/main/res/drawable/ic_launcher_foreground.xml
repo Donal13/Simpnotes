@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Notepad body (white, top-right corner cut for fold) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M32,20 Q28,20 28,24 L28,84 Q28,88 32,88 L76,88 Q80,88 80,84 L80,28 L72,20 Z" />
+
+    <!-- Folded corner flap -->
+    <path
+        android:fillColor="#D0BCFF"
+        android:pathData="M72,20 L80,28 L72,28 Z" />
+
+    <!-- Text lines -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#6200EE"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:pathData="M36,44 L72,44 M36,55 L72,55 M36,66 L72,66 M36,77 L58,77" />
+
+</vector>

@@ -1,0 +1,47 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+/.idea/deploymentTargetSelector.xml
+/.idea/deviceManager.xml
+.kotlin
+
+# Claude Code files stay local, not in the public repo
+CLAUDE.md
+/.claude/
+
+# Release signing: never publish these. Anyone with the key can sign updates as you.
+*.jks
+*.keystore
+keystore.properties
+
+# Signed release builds (Android Studio puts them in app/release by default)
+/app/release/
+*.apk
+*.aab
+
+# Private data: note exports and profiler heap dumps (which can hold note text)
+simpnotes-export-*.json
+*.hprof
+
+# JVM crash logs
+hs_err_pid*
+replay_pid*
+
+# VSCode and its Java/Gradle tooling
+.vscode/
+.project
+.classpath
+.settings/
+bin/
