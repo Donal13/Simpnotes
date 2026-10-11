@@ -40,6 +40,17 @@
                 android:name="android.appwidget.provider"
                 android:resource="@xml/notes_widget_info" />
         </receiver>
+
+        <!-- Keeps the widget's header date current: a midnight alarm, plus these system changes. -->
+        <receiver
+            android:name=".widget.DateChangeReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+                <action android:name="android.intent.action.LOCALE_CHANGED" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

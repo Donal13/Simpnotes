@@ -101,13 +101,4 @@ class LineEditsTest {
     fun trimOfBlankTextIsEmpty() {
         assertEquals("" to listOf(plain), LineEdits.trimBlankEdgeLines("\n \n", listOf(red, red, red)))
     }
-
-    @Test
-    fun lineEndOffsetFindsEachLinesEnd() {
-        val text = "ab\ncde\n"
-        assertEquals(2, LineEdits.lineEndOffset(text, 0))
-        assertEquals(6, LineEdits.lineEndOffset(text, 1))
-        assertEquals(7, LineEdits.lineEndOffset(text, 2))
-        assertEquals(7, LineEdits.lineEndOffset(text, 99))
-    }
 }

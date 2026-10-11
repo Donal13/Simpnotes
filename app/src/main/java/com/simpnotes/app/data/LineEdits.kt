@@ -11,18 +11,6 @@ object LineEdits {
         return line
     }
 
-    /** Offset just past the last character of [line], i.e. where the cursor goes to "end of line". */
-    fun lineEndOffset(text: String, line: Int): Int {
-        var current = 0
-        for (i in text.indices) {
-            if (text[i] == '\n') {
-                if (current == line) return i
-                current++
-            }
-        }
-        return text.length
-    }
-
     /** Pads with plain styles or drops extras so there is exactly one style per line. */
     fun fit(styles: List<LineStyle>, lineCount: Int): List<LineStyle> = when {
         styles.size == lineCount -> styles

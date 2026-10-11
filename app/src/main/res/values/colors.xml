@@ -11,6 +11,7 @@
          The live widget uses the system's Material You colours instead. -->
     <color name="widget_surface">#FFFFFBFE</color>
     <color name="widget_text">#FF1C1B1F</color>
+    <color name="widget_muted">#FF49454F</color>
     <!-- Same shades as LineColor.RED / BLUE in ui/theme/LineColors.kt -->
     <color name="widget_red">#FFC62828</color>
     <color name="widget_blue">#FF1565C0</color>

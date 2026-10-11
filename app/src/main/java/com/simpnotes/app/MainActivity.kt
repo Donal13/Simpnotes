@@ -113,9 +113,6 @@ class MainActivity : ComponentActivity() {
         if (!NotesWidget.isOurWidget(this, widgetId)) return null
         val noteId = intent.getLongExtra(WidgetIntents.EXTRA_NOTE_ID, 0L)
         return when (intent.action) {
-            WidgetIntents.ACTION_OPEN_NOTE -> if (noteId > 0) {
-                Routes.edit(noteId, widgetId, line = intent.getIntExtra(WidgetIntents.EXTRA_LINE, -1))
-            } else null
             WidgetIntents.ACTION_ADD_LINE -> if (noteId > 0) {
                 Routes.edit(noteId, widgetId, append = true)
             } else null

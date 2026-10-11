@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">SimpNotes</string>
-    <string name="widget_description">A note on your home screen. Tap + to add a line.</string>
+    <string name="widget_description">A note on your home screen. Tap it to add a line.</string>
     <string name="widget_preview_title">Shopping</string>
+    <string name="widget_preview_date">Mon, Jun 1 · <b>W23</b></string>
     <string name="widget_preview_line_1">Milk</string>
     <string name="widget_preview_line_2">Bread</string>
     <string name="widget_preview_line_3">Call the plumber</string>

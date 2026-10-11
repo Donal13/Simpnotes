@@ -11,33 +11,38 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="56dp"
+        android:layout_height="wrap_content"
         android:gravity="center_vertical"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="4dp">
 
         <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
             android:importantForAccessibility="no"
             android:src="@drawable/ic_widget_note"
-            android:tint="@color/widget_text" />
+            android:tint="@color/widget_muted" />
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
+            android:layout_marginStart="8dp"
             android:layout_weight="1"
+            android:fontFamily="sans-serif-medium"
+            android:maxLines="1"
             android:text="@string/widget_preview_title"
             android:textColor="@color/widget_text"
-            android:textSize="16sp" />
+            android:textSize="15sp" />
 
-        <ImageView
-            android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:importantForAccessibility="no"
-            android:padding="4dp"
-            android:src="@drawable/ic_widget_add"
-            android:tint="@color/widget_text" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:maxLines="1"
+            android:text="@string/widget_preview_date"
+            android:textColor="@color/widget_muted"
+            android:textSize="12sp" />
     </LinearLayout>
 
     <TextView

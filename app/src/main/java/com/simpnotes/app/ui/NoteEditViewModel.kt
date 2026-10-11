@@ -83,7 +83,6 @@ class NoteEditViewModel(
         var text = note?.body.orEmpty()
         var lineStyles = note?.styles() ?: listOf(LineStyle.Plain)
         var selection = TextRange.Zero
-        val line = savedState[Routes.ARG_LINE] ?: -1
         when {
             savedState[Routes.ARG_APPEND] ?: false -> {
                 if (text.isNotEmpty()) {
@@ -93,14 +92,9 @@ class NoteEditViewModel(
                 selection = TextRange(text.length)
                 initialFocus = InitialFocus.BODY
             }
-            line >= 0 -> {
-                selection = TextRange(LineEdits.lineEndOffset(text, line))
-                initialFocus = InitialFocus.BODY
-            }
             note == null -> initialFocus = InitialFocus.TITLE
         }
         // Only act on the widget's request once, not again if the app is restored later.
-        savedState[Routes.ARG_LINE] = -1
         savedState[Routes.ARG_APPEND] = false
 
         title = TextFieldValue(note?.title.orEmpty())
